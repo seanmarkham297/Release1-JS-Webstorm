@@ -1,0 +1,93 @@
+{
+  "stationCollection": [
+    {
+      "id": "01",
+      "title": "Dunmore",
+      "readings": [
+        {
+          "id": "02",
+          "code": "700",
+          "temp": "8.0",
+          "windspeed": "1.0",
+          "windDirection": "98",
+          "pressure": "999"
+        },
+        {
+          "id": "03",
+          "code": "200",
+          "temp": "0.5",
+          "windspeed": "3.5",
+          "windDirection": "102",
+          "pressure": "1000"
+        },
+        {
+          "code": "20",
+          "temp": "20",
+          "windspeed": "20",
+          "windDirection": "20",
+          "pressure": "20"
+        },
+        {
+          "code": "12",
+          "temp": "8",
+          "windspeed": "9",
+          "windDirection": "10",
+          "pressure": "19"
+        }
+      ],
+      "latestTemp": "8",
+      "latestPressure": "19",
+      "latestFarenheit": 46.4,
+      "latestWindSpeed": 1,
+      "codeNum": "Not Defined",
+      "latestWindCompass": "North North East",
+      "windChill": 9.89
+    },
+    {
+      "id": "04",
+      "title": "Tramore",
+      "readings": [
+        {
+          "id": "05",
+          "code": "800",
+          "temp": "0.5",
+          "windspeed": "3.5",
+          "windDirection": "90",
+          "pressure": "1001"
+        },
+        {
+          "id": "06",
+          "code": "600",
+          "temp": "6.0",
+          "windspeed": "2.0",
+          "windDirection": "96",
+          "pressure": "1004"
+        },
+        {
+          "code": "22",
+          "temp": "22",
+          "windspeed": "56",
+          "windDirection": "45",
+          "pressure": "10"
+        }
+      ],
+      "latestTemp": "22",
+      "latestPressure": "10",
+      "latestFarenheit": 71.6,
+      "latestWindSpeed": 1,
+      "codeNum": "Not Defined",
+      "latestWindCompass": "North North East",
+      "windChill": 24.15
+    },
+    {
+      "title": "test",
+      "readings": [],
+      "id": "537fe5d0-107d-11ec-b8bd-73897be75db0"
+    },
+    {
+      "title": "TESTING",
+      "readings": [],
+      "id": "ab2af320-108b-11ec-b6ed-83c46a2ce193"
+    }
+  ]
+}

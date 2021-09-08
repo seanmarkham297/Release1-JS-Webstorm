@@ -1,0 +1,78 @@
+{{> menu}}
+
+<section class="ui center aligned middle aligned segment">
+  <h2 class="ui header">
+    {{station.title}}
+  </h2>
+
+  <section class="ui segment">
+
+    <h2 class="ui header">
+      {{station.Title}}
+    </h2>
+
+      <div class="ui five cards">
+        <div class="card">
+          <div class="extra">
+            <h2 class="header">{{station.title}}</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="extra">
+            <h2 class="header">Weather</h2>
+            <h3 class="header">{{station.codeNum}}</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="extra">
+            <h2 class="header">Temp</h2>
+            <h3 class="header">{{station.latestTemp}} C</h3>
+            <h3 class="header">{{station.latestFarenheit}} F</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="extra">
+            <h2 class="header">Wind</h2>
+            <h3 class="header">{{station.latestWindSpeed}} bft</h3>
+            <h3 class="header">{{station.latestWindCompass}}</h3>
+            <h3 class="header">Feels like {{station.windChill}}</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="extra">
+            <h2 class="header">Pressure</h2>
+            <h3 class="header">{{station.latestPressure}} hpa</h3>
+          </div>
+        </div>
+        <h2 class="ui header">
+        </h2>
+      </div>
+    </section>
+
+  {{> listreadings}}
+  <form class="ui stacked segment form" action="/station/{{station.title}}/addreading" method="POST">
+    <div class="five fields">
+      <div class="field">
+        <label>Code</label>
+        <input placeholder="00" type="number" name="code">
+      </div>
+      <div class="field">
+        <label>Temperature</label>
+        <input placeholder="00.0" type="number" name="temp">
+      </div>
+      <div class="field">
+        <label>Wind Speed</label>
+        <input placeholder="00.0" type="number" name="windspeed">
+      </div>
+      <div class="field">
+        <label>Wind Direction</label>
+        <input placeholder="00.0" type="number" name="windDirection">
+      </div>
+      <div class="field">
+        <label>Pressure</label>
+        <input placeholder="00.0" type="number" name="pressure">
+      </div>
+    </div>
+    <button class="ui blue submit button">Submit Report</button>
+  </form>
+</section>
